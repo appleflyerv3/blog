@@ -26,7 +26,7 @@ const isCollapsed = sortedSeriesPosts.length > COLLAPSE_THRESHOLD
   <div class="font-bold text-lg text-neutral-900 dark:text-neutral-100 relative mb-3
     before:w-1 before:h-4 before:rounded-md before:bg-[var(--primary)]
     before:absolute before:left-[-16px] before:top-[5.5px]">
-    专栏：{series}
+    Series: {series}
   </div>
   
   <div id="series-posts" class:list={["space-y-2", 
@@ -47,7 +47,7 @@ const isCollapsed = sortedSeriesPosts.length > COLLAPSE_THRESHOLD
   {isCollapsed && (
     <div class="pt-2">
       <button id="expand-series-btn" class="btn-plain text-xs text-[var(--primary)]">
-        展开 共 {sortedSeriesPosts.length} 篇文章
+        展开 共 {sortedSeriesPosts.length} posts
       </button>
     </div>
   )}

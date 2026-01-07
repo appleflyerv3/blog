@@ -112,7 +112,7 @@ onMount(async () => {
                 
                 <!-- 文章数量统计 -->
                 <div class="w-[70%] md:w-[80%] transition text-left text-50">
-                    {group.posts.length} 篇文章
+                    {group.posts.length} posts
                 </div>
             </div>
 
@@ -129,7 +129,7 @@ onMount(async () => {
                             {formatDate(post.data.published)}
                         </div>
 
-                        <!-- 时间线标记 -->
+                        <!-- Timeline Marker -->
                         <div class="w-[15%] md:w-[10%] relative dash-line h-full flex items-center">
                             <div
                                 class="transition-all mx-auto w-1 h-1 rounded group-hover:h-5

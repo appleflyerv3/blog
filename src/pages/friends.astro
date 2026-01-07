@@ -3,10 +3,10 @@ import MainGridLayout from "../layouts/MainGridLayout.astro";
 import friendsData from "../config/friends.json";
 import Giscus from "../components/misc/Giscus.astro";
 
-// 从JSON文件加载友链数据
+// Load friend links data from JSON file
 const friends = friendsData;
 ---
-<MainGridLayout title="友链" description="友链">
+<MainGridLayout title="Friends" description="Friends">
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full ">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8 my-4">

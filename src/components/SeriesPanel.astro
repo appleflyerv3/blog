@@ -74,7 +74,7 @@ const groups: { category: string; series: Series[] }[] = (() => {
                 <div class="flex flex-row w-full items-center h-[3.75rem]">
                     <!-- 左侧添加总文章数 -->
                     <div class="w-[20%] md:w-[15%] text-sm text-right text-50 flex flex-row justify-end items-center pr-2">
-                        <span class="font-semibold text-75">{totalPosts} 篇文章</span>
+                        <span class="font-semibold text-75">{totalPosts} posts</span>
                     </div>
                     
                     <!-- 大圆点 -->
@@ -83,7 +83,7 @@ const groups: { category: string; series: Series[] }[] = (() => {
                     </div>
                     
                     <!-- 系列计数 -->
-                    <div class="w-[65%] md:w-[75%] text-left text-50">{group.series.length} 个专栏</div>
+                    <div class="w-[65%] md:w-[75%] text-left text-50">{group.series.length} Series</div>
                 </div>
                 
                 {group.series.map(s => (
@@ -94,7 +94,7 @@ const groups: { category: string; series: Series[] }[] = (() => {
                         <div class="flex flex-row justify-start items-center h-full">
                             <!-- count -->
                             <div class="w-[20%] md:w-[15%] text-sm text-right text-50">
-                                { s.count } 篇文章
+                                { s.count } posts
                             </div>
                             <!-- dot and line -->
                             <div class="w-[15%] md:w-[10%] relative dash-line h-full flex items-center">
