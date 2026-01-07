@@ -113,6 +113,6 @@ export async function GET(context: APIContext) {
 		description: siteConfig.subtitle || 'No description',
 		site: context.site,
 		items: feed,
-		customData: `<language>zh-CN</language>`,
+		customData: `<language>en</language>`,
 	});
 }
