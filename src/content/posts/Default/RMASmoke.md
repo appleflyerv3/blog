@@ -60,12 +60,12 @@ Other than leaking the BootROM, we could also test behavior of peripherals withi
 ---
 
 ## credits:
-- hannah: the idea to abuse RMASmoke to leak the BootROM
+- hannah: the idea to abuse RMASmoke to leak the BootROM \
           rewriting the RMASmoke PoC written by writable originally: making an NVMEM space larger than 1024 bytes and reading from that NVMEM space
 
 - writable: finding the buffer overflow in the Cr50 TPM2 task
 
-- appleflyer: verifying we had control over the stack and pc(program counter) in the Cr50 with RMASmoke
-              writing the ROP chain to leak the BootROM
-              buying an RMASmoke vulnerable chromebook(it was 75 USD btw) and running RMASmoke
+- appleflyer: verifying we had control over the stack and pc(program counter) in the Cr50 with RMASmoke \
+              writing the ROP chain to leak the BootROM \
+              buying an RMASmoke vulnerable chromebook(it was 75 USD btw) and running RMASmoke \
               writing this writeup :D
